@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="{{ url_for('static', filename='image.css') }}" rel="stylesheet">
+  <title>유사 이미지 추천</title>
+</head>
+<body>
+  <div class="post-image-container">
+    <div class="header">
+      <div class="header-box">
+        <div class="img-box">
+          <a class="a-btn" href="{{ url_for('main') }}">
+            <img id="img" src="{{ url_for('static', filename='image/danawa.jpg') }}" width="200px" alt="">
+          </a>
+        </div>
+        <div>
+          <a class="a-btn" href="{{ url_for('main') }}">메인으로</a>
+        </div>
+      </div>
+      <div class="line"></div>
+    </div>
+    <h1>검색한 이미지</h1>
+    <img src="{{ url_for('static', filename=image_path) }}" alt="">
+    <h2>유사 제품</h2>
+    <div >
+      {% for similar_img_path in similar_img_path_list %}
+      <img src="{{ url_for('static', filename=similar_img_path) }}" alt="">
+      {% endfor %}
+    </div>
+
+  </div>
+  
+  
+</body>
+</html>
