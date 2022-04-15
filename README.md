@@ -64,7 +64,19 @@
 
 
 
+## 화면 구성
 
+- 메인 페이지
+
+![캡처7](README.assets/캡처7.png)
+
+- 예측 사진 입력 페이지
+
+![캡처8](README.assets/캡처8.png)
+
+- 예측 결과 페이지
+
+![캡처9](README.assets/캡처9.png)
 
 
 
