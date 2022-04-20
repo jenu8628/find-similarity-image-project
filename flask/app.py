@@ -1,5 +1,4 @@
-from flask import Flask, redirect, flash, request, render_template, url_for
-import pickle
+from flask import Flask, request, render_template
 import logging
 import numpy as np
 from werkzeug.utils import secure_filename
@@ -40,7 +39,7 @@ def save_image(image, category, file_name):
     image_path = 'train_image_data/' + category + '/' + file_name
     return image_path
 
-def find_similar_image(category, image, group):
+def find_similar_image(category, image):
     group = []  # 검색한 이미지가 속한 카테고리 그룹
     path_dir = f'./static/train_image_data/{category}'
     img_name_list = os.listdir(path_dir)

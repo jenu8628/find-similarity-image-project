@@ -68,15 +68,13 @@
 
 - 메인 페이지
 
-![캡처7](README.assets/캡처7.png)
+![캡처](README.assets/캡처.PNG)
 
 - 예측 사진 입력 페이지
 
-![캡처8](README.assets/캡처8.png)
+![캡처2](README.assets/캡처2.PNG)
 
 - 예측 결과 페이지
 
-![캡처9](README.assets/캡처9.png)
-
-
+![캡처3](README.assets/캡처3.PNG)
 
